@@ -1,5 +1,5 @@
 .intro-bg {
-  background: center / cover no-repeat url("../../img/bg.jpg");
+  background: top / cover no-repeat url("../../img/bg.jpg");
 }
 
 .intro {
@@ -7,20 +7,27 @@
 }
 
 .intro > * + * {
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 .intro h1 {
   font-family: "Oswald", "Times New Roman", Times, serif;
   font-size: 6rem;
   line-height: 1;
+  color: rgb(17, 17, 17);
+}
+
+.intro p {
+  color: rgb(17, 17, 17);
 }
 
 .intro-list {
-  margin-top: 2em;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+}
+
+.intro-list li {
+  padding: 1.5em 0.5em;
 }
 
 .intro-list img {
@@ -34,25 +41,29 @@
   .intro h1 {
     font-size: 4rem;
   }
-  .intro-list {
-    gap: 0.5rem;
+  .intro-list li {
+    padding: 0.5rem;
   }
   .intro-list img {
-    width: 132px;
-    height: 132px;
+    width: 120px;
+    height: 120px;
+    border-width: 3px;
   }
 }
 
 @media (max-width: 480px) {
+  .intro-bg {
+    background: #fdfdfd;
+  }
   .intro h1 {
     font-size: 3rem;
   }
+  .intro h1,
   .intro p {
-    max-width: 30ch;
+    text-align: center;
   }
-  .intro-list img {
-    border-width: 3px;
-    width: 72px;
-    height: 72px;
+  .intro-list {
+    flex-direction: column;
+    align-items: center;
   }
 }

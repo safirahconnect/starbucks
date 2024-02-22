@@ -6,12 +6,6 @@ body {
   margin: 0;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   min-height: 100vh;
-  transition: background 0.5s;
-}
-
-/*body transition related to the active header-mobile-menu*/
-body.bg-effect {
-  background: rgba(0, 0, 0, 0.2);
 }
 
 img {
@@ -34,5 +28,5 @@ input {
 h1,
 h2,
 p {
-  margin-block-start: 0;
+  margin-block: 0;
 }

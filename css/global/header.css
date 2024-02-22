@@ -32,9 +32,13 @@
 .header-input input {
   padding: 0.5em;
   border: 1px solid #bbb;
-  border-right: none;
+  border-right: transparent;
 }
 
+.header-input input::placeholder {
+  font-family: "Open Sans";
+  color: #aaa;
+}
 .header-input input:focus {
   outline: none;
 }
@@ -43,7 +47,11 @@
   background: none;
   padding: 0.5em;
   border: 1px solid #bbb;
-  border-left: none;
+  border-left: transparent;
+}
+
+.header-input button:focus {
+  border: 1px solid #000;
 }
 
 .header-input button,
@@ -73,7 +81,7 @@
   left: 0;
   width: 250px;
   min-height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   padding: 1em;
 }
 

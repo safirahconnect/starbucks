@@ -1,9 +1,13 @@
-.drinks {
+/*first-article*/
+
+.drinks,
+.vanilla {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
 }
 
-.drinks-content-info {
+.drinks-content-info,
+.vanilla-content-info {
   padding-block: var(--offset);
   padding-inline: var(--inner-spacing);
   display: grid;
@@ -11,7 +15,8 @@
   justify-items: start;
 }
 
-.drinks-content-info h2 {
+.drinks-content-info h2,
+.vanilla-content-info h2 {
   font-family: "Oswald", "Times New Roman", Times, serif;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -19,7 +24,8 @@
   margin-bottom: 0.5em;
 }
 
-.drinks-content-info h2::before {
+.drinks-content-info h2::before,
+.vanilla-content-info h2::before {
   display: block;
   content: "";
   width: 168px;
@@ -34,33 +40,43 @@
   margin-bottom: 2em;
 }
 
-.drinks-content-info p {
+.drinks-content-info p,
+.vanilla-content-info p {
   max-width: 60ch;
   margin-bottom: 4em;
 }
 
-.drinks-pic img {
+.drinks-pic img,
+.vanilla-pic img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: bottom left;
+}
+
+.vanilla-pic img {
+  object-position: center;
 }
 
 @media (min-width: 1200px) {
-  .drinks-pic img {
+  .drinks-pic img,
+  .vanilla-pic img {
     max-width: 800px;
   }
 }
 
 @media (max-width: 800px) {
-  .drinks-content-info h2::before {
+  .drinks-content-info h2::before,
+  .vanilla-content-info h2::before {
     top: -16px;
     width: 84px;
     height: 12px;
   }
 }
 
-@media (max-width: 480px) {
-  .drinks-pic img {
+@media (max-width: 600px) {
+  .drinks-pic img,
+  .vanilla-pic img {
     display: none;
   }
 }

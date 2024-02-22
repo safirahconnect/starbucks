@@ -30,3 +30,12 @@ h2,
 p {
   margin-block: 0;
 }
+
+blockquote,
+figure {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

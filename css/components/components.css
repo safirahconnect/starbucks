@@ -1,11 +1,25 @@
 :root {
   --offset: 6em;
+  --inner-spacing: 2em;
 }
 
 .container {
   max-width: 1200px;
-  padding-inline: 2em;
+  padding-inline: var(--inner-spacing);
   margin-inline: auto;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.5em 2em;
+  border: 2px solid rgb(69, 69, 69);
+  border-radius: 4px;
+  color: rgb(69, 69, 69);
+}
+
+.botao:hover {
+  background: rgb(69, 69, 69);
+  color: #eee;
 }
 
 @media (max-width: 800px) {

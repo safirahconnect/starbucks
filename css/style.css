@@ -4,7 +4,5 @@
 
 @import "./components/components.css";
 
-@import "./main/intro.css";
-@import "./main/primary-section.css";
-@import "./main/secondary-section.css";
-@import "./main/last-section.css";
+@import "./main/main.css";
+@import "./main/articles.css";

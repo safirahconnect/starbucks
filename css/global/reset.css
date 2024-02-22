@@ -30,3 +30,9 @@ input {
   font-size: 1rem;
   background: none;
 }
+
+h1,
+h2,
+p {
+  margin-block-start: 0;
+}

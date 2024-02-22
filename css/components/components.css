@@ -1,5 +1,15 @@
+:root {
+  --offset: 6em;
+}
+
 .container {
   max-width: 1200px;
   padding-inline: 2em;
   margin-inline: auto;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --offset: 2em;
+  }
 }

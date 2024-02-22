@@ -1,0 +1,10 @@
+@import "./global/reset.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+@import "./components/components.css";
+
+@import "./main/intro.css";
+@import "./main/primary-section.css";
+@import "./main/secondary-section.css";
+@import "./main/last-section.css";

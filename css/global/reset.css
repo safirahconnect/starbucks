@@ -36,6 +36,6 @@ figure {
   margin: 0;
 }
 
-a {
+a:not(.footer a) {
   text-decoration: none;
 }

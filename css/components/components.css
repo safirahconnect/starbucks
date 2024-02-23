@@ -1,11 +1,11 @@
 :root {
-  --offset: 6em;
-  --inner-spacing: 2em;
+  --block-spacing: 6em;
+  --inline-spacing: 2em;
 }
 
 .container {
   max-width: 1200px;
-  padding-inline: var(--inner-spacing);
+  padding-inline: var(--inline-spacing);
   margin-inline: auto;
 }
 
@@ -24,6 +24,6 @@
 
 @media (max-width: 800px) {
   :root {
-    --offset: 2em;
+    --block-spacing: 2em;
   }
 }

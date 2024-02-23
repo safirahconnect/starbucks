@@ -1,0 +1,25 @@
+.footer-bg {
+  background: #333;
+  color: #fff;
+}
+
+.footer {
+  padding-block: 4em;
+  text-align: center;
+}
+
+.footer > * + * {
+  margin-top: var(--block-spacing);
+}
+
+.footer p:first-of-type {
+  font-size: 0.875rem;
+}
+
+.footer p:last-of-type {
+  font-size: 0.75rem;
+}
+
+.footer a {
+  color: rgb(168, 248, 221);
+}

@@ -14,8 +14,8 @@
 .vanilla-content-info,
 .caramel-content-info,
 .kindness-content-info {
-  padding-block: var(--offset);
-  padding-inline: var(--inner-spacing);
+  padding-block: var(--block-spacing);
+  padding-inline: var(--inline-spacing);
   display: grid;
   justify-content: center;
   justify-items: start;

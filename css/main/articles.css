@@ -1,13 +1,19 @@
-/*first-article*/
-
 .drinks,
-.vanilla {
+.vanilla,
+.caramel,
+.kindness {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.caramel-content-info {
+  align-self: start;
+}
+
 .drinks-content-info,
-.vanilla-content-info {
+.vanilla-content-info,
+.caramel-content-info,
+.kindness-content-info {
   padding-block: var(--offset);
   padding-inline: var(--inner-spacing);
   display: grid;
@@ -16,7 +22,9 @@
 }
 
 .drinks-content-info h2,
-.vanilla-content-info h2 {
+.vanilla-content-info h2,
+.caramel-content-info h2,
+.kindness-content-info h2 {
   font-family: "Oswald", "Times New Roman", Times, serif;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -25,7 +33,9 @@
 }
 
 .drinks-content-info h2::before,
-.vanilla-content-info h2::before {
+.vanilla-content-info h2::before,
+.caramel-content-info h2::before,
+.kindness-content-info h2::before {
   display: block;
   content: "";
   width: 168px;
@@ -41,33 +51,59 @@
 }
 
 .drinks-content-info p,
-.vanilla-content-info p {
+.vanilla-content-info p,
+.caramel-content-info p,
+.kindness-content-info p {
   max-width: 60ch;
   margin-bottom: 4em;
 }
 
 .drinks-pic img,
-.vanilla-pic img {
+.drinks-content-pic img,
+.vanilla-pic img,
+.vanilla-content-pic img,
+.caramel-pic img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: bottom left;
+  object-position: center;
 }
 
-.vanilla-pic img {
+.vanilla-pic img,
+.caramel-pic img {
   object-position: center;
+}
+
+.kindness-bg {
+  background: #e3e4e8;
+}
+
+.kindness-bg-pic {
+  background: center / cover no-repeat url(../../img/bg3.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.kindness-sec-bg-pic {
+  background: right / cover no-repeat url(../../img/bg4.jpg);
+  height: 500px;
+  width: 100%;
+  grid-column: 1/-1;
 }
 
 @media (min-width: 1200px) {
   .drinks-pic img,
-  .vanilla-pic img {
+  .vanilla-pic img,
+  .caramel-pic img {
     max-width: 800px;
   }
 }
 
 @media (max-width: 800px) {
   .drinks-content-info h2::before,
-  .vanilla-content-info h2::before {
+  .vanilla-content-info h2::before,
+  .caramel-content-info h2::before,
+  .kindness-content-info h2::before {
     top: -16px;
     width: 84px;
     height: 12px;
@@ -75,8 +111,21 @@
 }
 
 @media (max-width: 600px) {
+  .drinks,
+  .vanilla,
+  .caramel,
+  .kindness {
+    grid-template-columns: 1fr;
+  }
   .drinks-pic img,
-  .vanilla-pic img {
+  .vanilla-pic img,
+  .caramel-pic img {
     display: none;
+  }
+
+  .drinks-content-pic img,
+  .vanilla-content-pic img,
+  .kindness-sec-bg-pic {
+    height: 250px;
   }
 }
